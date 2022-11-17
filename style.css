@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b2854;
+}
+
+h2{
+    color:white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+span{
+    content: "";
+    position: absolute;
+    width:150px;
+    height: 150px;
+    background-color: transparent;
+    top:0;
+    left:0;
+    animation: cuadro 10s linear infinite;
+}
+
+@keyframes cuadro{
+    0%{transform: scale(0) rotate(0deg);
+    opacity: 0;}
+    100%{transform: scale(1) rotate(720deg);
+    opacity: 1;}
+}
+
+.c1{
+    top:400px;
+    left:0;
+    animation-delay: 1s;
+    border: 15px solid red;
+}
+
+.c2{
+    top:350px;
+    left:400px;
+    animation-delay: 2s;
+    border: 10px solid blue;
+}
+
+.c3{
+    top:100px;
+    left:500px;
+    animation-delay: 3s;
+    border: 15px solid red;
+}
+
+.c4{
+    top:20px;
+    left:0;
+    animation-delay: 4s;
+    
+    border: 10px solid blue;
+}
+
+.c5{
+    top:100px;
+    left:800px;
+    animation-delay: 5s;
+    border: 15px solid red;
+}
+
+.c6{
+    top:400px;
+    left:900px;
+    animation-delay: 6s;
+    border: 10px solid blue;
+}
+
+.c7{
+    top:200px;
+    left:1200px;
+    animation-delay: 7s;
+    border: 15px solid red;
+}
+
